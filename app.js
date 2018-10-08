@@ -1,4 +1,4 @@
-document.querySelector('.get-jokes').addEventListener('click', getJokes);
+document.querySelector('#get-jokes').addEventListener('click', getJokes);
 
 function getJokes(e) {
     const number = document.querySelector('input[type="number"]').value;
@@ -16,7 +16,7 @@ function getJokes(e) {
                     output += `<br><li>${joke.joke}</li><hr>`;
                 });
             } else {
-                output += '<li>Somting Went Wrong<li/>'
+                output += '<li>Somting Went Wrong</li>';
             }
             document.querySelector('.jokes').innerHTML = output;
 
