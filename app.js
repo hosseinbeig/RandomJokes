@@ -16,7 +16,7 @@ function getJokes(e) {
                     output += `<br><li>${joke.joke}</li><hr>`;
                 });
             } else {
-                output += '<li>Somting Went Wrong<li/>'
+                output += '<li>Somting Went Wrong</li>';
             }
             document.querySelector('.jokes').innerHTML = output;
 
